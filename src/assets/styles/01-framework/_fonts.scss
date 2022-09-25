@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+// * {
+//   font-family: "DM Sans";
+// }
+
+// FONT FACE
+@font-face {
+  font-family: "Gotham-bold";
+  src: url("/src/assets/fonts/gotham-font/GothamBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gotham-light";
+  src: url("/src/assets/fonts/gotham-font/GothamLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gotham-medium";
+  src: url("/src/assets/fonts/gotham-font/GothamMedium.ttf") format("truetype");
+}

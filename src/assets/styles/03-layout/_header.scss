@@ -1,0 +1,345 @@
+.header {
+  // WIDE SCREEN STYLE
+  &__bigScreen {
+    &__top {
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__search {
+        display: flex;
+        align-items: center;
+
+        &__title {
+          font-family: "Gotham-light";
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 155.2%;
+          color: #002744;
+          margin-right: 10px;
+        }
+
+        &__form {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+
+          &__input {
+            font-family: "Gotham-light";
+            padding: 7px 45px;
+            border: 1px solid #002643;
+            border-radius: 25px;
+            outline: none;
+          }
+
+          &__searchIcon {
+            position: absolute;
+            right: 0;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    &__bottom {
+      background: #002643;
+
+      &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+
+        &__logo {
+          width: 372px;
+        }
+
+        &__list {
+          font-family: "Gotham-medium";
+          flex: 0 0 55%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          li {
+            a {
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 22px;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+  // END WIDE SCREEN STYLE
+
+  // SMALL SCREEN STYLE
+
+  // responsive menu style
+  &__smallScreen {
+    background: #002643;
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    &__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+
+      &__logo {
+        width: 198px;
+      }
+
+      &__iconBox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .iconSearch {
+          margin-right: 10px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        .iconHamburger {
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  // show menu
+  .dropdownShow {
+    height: 100%;
+    padding: 20px;
+  }
+  // dropdown syle
+  &__dropdown {
+    font-family: "Gotham-bold";
+    overflow: hidden;
+    height: 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    padding: 0;
+    transition: 0.25s linear;
+
+    // rotate chevron icon
+    .chevRotate {
+      &::after {
+        transform: rotateX(180deg);
+        filter: brightness(0) invert(1);
+      }
+    }
+
+    // show subList
+    .underListShow {
+      max-height: 300px;
+    }
+
+    &__close {
+      text-align: right;
+      padding: 0px 10px;
+
+      // close menu
+      .iconClose {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    // active link
+    .setActive {
+      background: #002643;
+      border-bottom: none;
+
+      .header__dropdown__mainList__hasChild__label {
+        color: #fff;
+      }
+    }
+
+    &__mainList {
+      list-style-type: none;
+      width: 100%;
+      padding: 0;
+      margin-bottom: 40px;
+      border-top: 0.5px solid #002643;
+
+      // regular links
+      &__regular {
+        padding: 10px 0px;
+        border-bottom: 0.5px solid #002643;
+
+        &:hover {
+          background: #002643;
+          cursor: pointer;
+        }
+
+        &:hover a {
+          color: #fff;
+        }
+
+        a {
+          padding: 10px;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 145%;
+          color: #002643;
+        }
+      }
+
+      // links with child list
+      &__hasChild {
+        padding-top: 10px;
+        position: relative;
+        border-bottom: 0.5px solid #002643;
+
+        &:hover {
+          background: #002643;
+          cursor: pointer;
+        }
+
+        &:hover &__label {
+          color: #fff;
+        }
+
+        &__label {
+          padding: 10px;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 145%;
+          color: #002643;
+
+          &::after {
+            content: "";
+            display: inline-block;
+            background-image: url("data:image/svg+xml,%3Csvg width='11' height='7' viewBox='0 0 11 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.67974 0.261936L6.07522 4.47699C5.77691 4.82624 5.22381 4.82624 4.9255 4.47699L1.32098 0.261936C1.17804 0.0963441 0.969851 0 0.746122 0C0.115331 0 -0.229584 0.713548 0.17437 1.18323L4.9255 6.74108C5.22381 7.09032 5.77691 7.09032 6.07522 6.74108L10.8263 1.18323C11.2303 0.713548 10.8823 0 10.2515 0C10.0309 0 9.81957 0.0963441 9.67663 0.261936H9.67974Z' fill='%236D6E71'/%3E%3C/svg%3E%0A");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 11px;
+            height: 7px;
+            position: absolute;
+            margin-top: 5px;
+            right: 10px;
+            transition: 0.25s linear;
+          }
+        }
+
+        &__subList {
+          max-height: 0px;
+          overflow: hidden;
+          width: 100px;
+          margin-top: 10px;
+          padding: 0;
+          list-style-type: none;
+          width: 100%;
+          transition: 0.25s linear;
+
+          li {
+            background: #d9d9d9;
+            border: 1px solid white;
+            padding: 10px;
+
+            a {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 145%;
+              color: #002643;
+            }
+          }
+        }
+      }
+    }
+
+    &__contact {
+      font-weight: 350;
+      font-size: 14px;
+      line-height: 145%;
+      color: #002643;
+      margin-bottom: 10px;
+    }
+  }
+
+  // search bar stlye
+  .showSearchBar {
+    max-height: 500px;
+    padding: 100px;
+  }
+
+  &__searchBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #002643;
+    max-height: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.25s linear;
+    padding: 0px;
+    overflow: hidden;
+    z-index: 10;
+
+    &__form {
+      position: relative;
+      z-index: 10;
+
+      input {
+        font-family: "Gotham-light";
+        padding: 7px 45px;
+        color: white;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid white;
+      }
+
+      &__iconSearch2 {
+        position: absolute;
+        left: 0;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  // overlay style
+  .showOverlay {
+    display: block;
+  }
+  &__overlay {
+    display: none;
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.199);
+  }
+  // END SMALL SCREEN STYLE
+
+  // RESPONSIVE
+  @media (max-width: 1024px) {
+    // big screen style
+    &__bigScreen {
+      display: none;
+    }
+
+    // small screen style
+    &__smallScreen {
+      display: block;
+    }
+  }
+}
