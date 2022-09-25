@@ -121,13 +121,15 @@
 
   // show menu
   .dropdownShow {
-    height: 100%;
+    height: 70%;
     padding: 20px;
   }
+
   // dropdown syle
   &__dropdown {
     font-family: "Gotham-bold";
     overflow: hidden;
+    overflow-y: scroll;
     height: 0px;
     position: fixed;
     top: 0;
@@ -135,6 +137,7 @@
     background: #fff;
     padding: 0;
     transition: 0.25s linear;
+    z-index: 2;
 
     // rotate chevron icon
     .chevRotate {
@@ -320,6 +323,15 @@
     display: block;
   }
   &__overlay {
+    display: none;
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.199);
+  }
+  &__overlay2 {
     display: none;
     z-index: 0;
     position: fixed;
