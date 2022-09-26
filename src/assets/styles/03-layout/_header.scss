@@ -1,6 +1,6 @@
 .header {
   // WIDE SCREEN STYLE
-  &__bigScreen {
+  &__big-screen {
     &__top {
       padding: 10px;
       display: flex;
@@ -34,7 +34,7 @@
             outline: none;
           }
 
-          &__searchIcon {
+          &__search-icon {
             position: absolute;
             right: 0;
             margin-right: 10px;
@@ -80,7 +80,7 @@
   // SMALL SCREEN STYLE
 
   // responsive menu style
-  &__smallScreen {
+  &__small-screen {
     background: #002643;
     display: none;
     position: fixed;
@@ -97,12 +97,12 @@
         width: 198px;
       }
 
-      &__iconBox {
+      &__icon-box {
         display: flex;
         align-items: center;
         justify-content: space-between;
 
-        .iconSearch {
+        .icon-search {
           margin-right: 10px;
 
           &:hover {
@@ -110,7 +110,7 @@
           }
         }
 
-        .iconHamburger {
+        .icon-hamburger {
           &:hover {
             cursor: pointer;
           }
@@ -120,7 +120,7 @@
   }
 
   // show menu
-  .dropdownShow {
+  .dropdown-show {
     height: 70%;
     padding: 20px;
   }
@@ -140,7 +140,7 @@
     z-index: 2;
 
     // rotate chevron icon
-    .chevRotate {
+    .chev-rotate {
       &::after {
         transform: rotateX(180deg);
         filter: brightness(0) invert(1);
@@ -148,7 +148,7 @@
     }
 
     // show subList
-    .underListShow {
+    .under-list-show {
       max-height: 300px;
     }
 
@@ -157,7 +157,7 @@
       padding: 0px 10px;
 
       // close menu
-      .iconClose {
+      .icon-close {
         &:hover {
           cursor: pointer;
         }
@@ -165,16 +165,16 @@
     }
 
     // active link
-    .setActive {
+    .set-active {
       background: #002643;
       border-bottom: none;
 
-      .header__dropdown__mainList__hasChild__label {
+      .header__dropdown__main-list__has-child__label {
         color: #fff;
       }
     }
 
-    &__mainList {
+    &__main-list {
       list-style-type: none;
       width: 100%;
       padding: 0;
@@ -205,7 +205,7 @@
       }
 
       // links with child list
-      &__hasChild {
+      &__has-child {
         padding-top: 10px;
         position: relative;
         border-bottom: 0.5px solid #002643;
@@ -241,7 +241,7 @@
           }
         }
 
-        &__subList {
+        &__sub-list {
           max-height: 0px;
           overflow: hidden;
           width: 100px;
@@ -277,12 +277,12 @@
   }
 
   // search bar stlye
-  .showSearchBar {
+  .show-search-bar {
     max-height: 500px;
     padding: 100px;
   }
 
-  &__searchBar {
+  &__search-bar {
     position: fixed;
     top: 0;
     width: 100%;
@@ -310,7 +310,7 @@
         border-bottom: 1px solid white;
       }
 
-      &__iconSearch2 {
+      &__icon-search2 {
         position: absolute;
         left: 0;
         margin-right: 10px;
@@ -319,9 +319,10 @@
   }
 
   // overlay style
-  .showOverlay {
+  .show-overlay {
     display: block;
   }
+
   &__overlay {
     display: none;
     z-index: 0;
@@ -331,6 +332,7 @@
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.199);
   }
+
   &__overlay2 {
     display: none;
     z-index: 0;
@@ -340,17 +342,19 @@
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.199);
   }
-  // END SMALL SCREEN STYLE
+}
+// END SMALL SCREEN STYLE
 
-  // RESPONSIVE
-  @media (max-width: 1024px) {
+// RESPONSIVE
+@media (max-width: breakpoint(lg)) {
+  .header {
     // big screen style
-    &__bigScreen {
+    &__big-screen {
       display: none;
     }
 
     // small screen style
-    &__smallScreen {
+    &__small-screen {
       display: block;
     }
   }

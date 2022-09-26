@@ -5,7 +5,7 @@
   margin-top: 20px;
   color: white;
 
-  &__joinBox {
+  &__join-box {
     &__title {
       font-family: "Gotham-bold";
       font-style: normal;
@@ -25,7 +25,7 @@
       margin-bottom: 25px;
     }
 
-    &__iconBox {
+    &__icon-box {
       display: flex;
       justify-content: flex-start;
       align-items: center;
@@ -55,7 +55,7 @@
     }
   }
 
-  &__optionsBox {
+  &__options-box {
     &__title {
       font-family: "Gotham-bold";
       font-style: normal;
@@ -65,7 +65,7 @@
       margin-bottom: 25px;
     }
 
-    &__linkBox {
+    &__link-box {
       margin-bottom: 25px;
       text-align: left;
 
@@ -82,7 +82,7 @@
     }
   }
 
-  &__copyTitle {
+  &__copy-title {
     margin-top: 25px;
     font-family: "Gotham-medium";
     font-style: normal;
@@ -92,7 +92,7 @@
     margin-bottom: 20px;
   }
 
-  &__copyTitle2 {
+  &__copy-title2 {
     display: none;
     font-family: "Gotham-medium";
     font-style: normal;
@@ -102,7 +102,7 @@
     line-height: 135.2%;
   }
 
-  &__termsBox {
+  &__terms-box {
     display: flex;
     align-items: center;
 
@@ -118,20 +118,19 @@
     }
   }
 }
+// END FOOTER STYLE
 
 // RESPONSIVE
-
-// 1024px
-@media (max-width: 1024px) {
+@media (max-width: breakpoint(lg)) {
   .footer {
-    &__joinBox {
+    &__join-box {
       &__title {
         font-weight: 400;
         font-size: 18px;
         line-height: 126%;
       }
 
-      &__iconBox {
+      &__icon-box {
         flex-direction: column;
         align-items: flex-start;
 
@@ -147,14 +146,14 @@
       }
     }
 
-    &__optionsBox {
+    &__options-box {
       &__title {
         font-weight: 400;
         font-size: 22px;
         line-height: 126%;
       }
 
-      &__linkBox {
+      &__link-box {
         &__link {
           font-size: 18px;
           line-height: 135.2%;
@@ -162,15 +161,15 @@
       }
     }
 
-    &__copyTitle {
+    &__copy-title {
       display: none;
     }
 
-    &__copyTitle2 {
+    &__copy-title2 {
       display: block;
     }
 
-    &__termsBox {
+    &__terms-box {
       &__link {
         font-size: 18px;
         line-height: 135.2%;
@@ -179,17 +178,16 @@
   }
 }
 
-// 768px
-@media (max-width: 768px) {
+@media (max-width: breakpoint(md)) {
   .footer {
-    &__optionsBox {
+    &__options-box {
       &__title {
         font-weight: 400;
         font-size: 18px;
         line-height: 126%;
       }
 
-      &__linkBox {
+      &__link-box {
         &__link {
           font-size: 12px;
           line-height: 135.2%;
@@ -197,12 +195,12 @@
       }
     }
 
-    &__copyTitle2 {
+    &__copy-title2 {
       font-size: 8px;
       line-height: 135.2%;
     }
 
-    &__termsBox {
+    &__terms-box {
       &__link {
         font-size: 10px;
         line-height: 135.2%;
