@@ -32,7 +32,7 @@ if (link) {
     link.forEach(el => {
         el.addEventListener('click', (e) => {
             if (e.target.classList[0] === ('header__dropdown__main-list__has-child') || e.target.classList[0] === ('header__dropdown__main-list__has-child set-active')) {
-                e.target.classList.toggle('set-ctive');
+                e.target.classList.toggle('set-active');
                 e.target.firstChild.nextElementSibling.classList.toggle('chev-rotate');
                 e.target.lastChild.previousElementSibling.classList.toggle('under-list-show');
             } else if (e.target.classList[0] === ('header__dropdown__main-list__has-child__label')) {

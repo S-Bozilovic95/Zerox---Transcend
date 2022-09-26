@@ -1,9 +1,14 @@
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
   // WIDE SCREEN STYLE
   &__big-screen {
     font-family: "Gotham";
+
     &__top {
-      padding: 10px;
+      padding: 17px 16px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -27,7 +32,7 @@
           position: relative;
 
           &__input {
-            padding: 7px 45px;
+            padding: 7px 40px 7px 7px;
             border: 1px solid #002643;
             border-radius: 25px;
             outline: none;
@@ -36,7 +41,7 @@
           &__search-icon {
             position: absolute;
             right: 0;
-            margin-right: 10px;
+            margin-right: 14px;
           }
         }
       }
@@ -45,11 +50,10 @@
     &__bottom {
       background: #002643;
 
-      &__row {
+      &__box {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0;
 
         &__logo {
           width: 372px;
@@ -85,11 +89,11 @@
     top: 0;
     width: 100%;
 
-    &__row {
+    &__box {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px;
+      padding: 37px 0px 29px 0px;
 
       &__logo {
         width: 198px;
@@ -119,8 +123,8 @@
 
   // show menu
   .dropdown-show {
-    height: 70%;
-    padding: 20px;
+    max-height: 70%;
+    padding: 28px 0px;
   }
 
   // dropdown syle
@@ -128,12 +132,12 @@
     font-family: "Gotham";
     overflow: hidden;
     overflow-y: scroll;
-    height: 0px;
+    max-height: 0px;
     position: fixed;
     top: 0;
     width: 100%;
     background: #fff;
-    padding: 0;
+    padding: 0px;
     transition: 0.25s linear;
     z-index: 2;
 
@@ -152,7 +156,6 @@
 
     &__close {
       text-align: right;
-      padding: 0px 10px;
 
       // close menu
       .icon-close {
@@ -181,12 +184,14 @@
 
       // regular links
       &__regular {
-        padding: 10px 0px;
+        padding: 15px 0px;
         border-bottom: 0.5px solid #002643;
+        transition: 0.25s ease-out;
 
         &:hover {
           background: #002643;
           cursor: pointer;
+          transition: 0.25s ease-in;
         }
 
         &:hover a {
@@ -194,23 +199,25 @@
         }
 
         a {
-          padding: 10px;
           font-weight: 400;
           font-size: 16px;
           line-height: 145%;
           color: #002643;
+          padding: 15px;
         }
       }
 
       // links with child list
       &__has-child {
-        padding-top: 10px;
+        padding-top: 15px;
         position: relative;
         border-bottom: 0.5px solid #002643;
+        transition: 0.25s ease-out;
 
         &:hover {
           background: #002643;
           cursor: pointer;
+          transition: 0.25s ease-oin;
         }
 
         &:hover &__label {
@@ -218,11 +225,11 @@
         }
 
         &__label {
-          padding: 10px;
           font-weight: 400;
           font-size: 16px;
           line-height: 145%;
           color: #002643;
+          padding: 15px;
 
           &::after {
             content: "";
@@ -277,7 +284,7 @@
   // search bar stlye
   .show-search-bar {
     max-height: 500px;
-    padding: 100px;
+    padding: 141px 53px;
   }
 
   &__search-bar {
@@ -291,16 +298,18 @@
     justify-content: center;
     align-items: center;
     transition: 0.25s linear;
-    padding: 0px;
+    padding: 0px 53px;
     overflow: hidden;
     z-index: 10;
 
     &__form {
       position: relative;
       z-index: 10;
+      width: 100%;
 
       input {
-        padding: 7px 45px;
+        width: 100%;
+        padding: 7px 7px 7px 40px;
         color: white;
         background-color: transparent;
         outline: none;
