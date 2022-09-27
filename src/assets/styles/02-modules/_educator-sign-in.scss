@@ -1,4 +1,4 @@
-.create-account {
+.educator {
   padding: 80px 0px 98px 0px;
   text-align: center;
   //   font-family: "Gotham";
@@ -10,10 +10,11 @@
     font-size: 42px;
     line-height: 50px;
     color: #002643;
+    margin-bottom: 32px;
   }
 
   &__subtitle {
-    margin: 30px 0px;
+    margin-bottom: 30px;
     font-weight: 350;
     font-size: 24px;
     line-height: 29px;
@@ -22,16 +23,11 @@
   }
 
   &__form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
     &__label {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      margin: 30px 0px 0px 0px;
+      margin-bottom: 30px;
       font-style: normal;
       font-weight: 350;
       font-size: 18px;
@@ -39,8 +35,7 @@
       color: #002643;
 
       &__input {
-        width: 624px;
-        height: 59px;
+        width: 100%;
         background: #ffffff;
         border: 1px solid #000000;
         font-weight: 300;
@@ -49,15 +44,24 @@
         padding: 17px;
         color: #002643;
       }
+
+      &__desc {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #002643;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
     }
 
     &__button {
-      width: 259.49px;
-      height: 47.01px;
+      width: 108px;
+      height: 47px;
       background: #ffffff;
       border: 3px solid #002643;
       border-radius: 4px;
-      margin: 51px 0px 30px 0px;
+      margin: 65px 0px 0px 0px;
       font-weight: 400;
       font-size: 18px;
       line-height: 135.2%;
@@ -69,63 +73,51 @@
       }
     }
   }
-
-  &__link {
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 22px;
-    text-decoration: underline;
-    color: #00b2e2;
-  }
 }
 
 // RESPONSIVE
 
 @media (max-width: breakpoint(lg)) {
-  .create-account {
-    padding: 48px 0px;
+  .educator {
+    padding: 48px 0px 60px 0px;
 
     &__title {
       font-size: 28px;
       line-height: 34px;
+      margin-bottom: 17px;
     }
 
     &__subtitle {
       font-size: 18px;
       line-height: 22px;
       color: #000000;
-      margin: 17px 0px 37px 0px;
     }
 
     &__form {
-      display: block;
-
       &__label {
         font-size: 14px;
         line-height: 17px;
-        margin: 0px 0px 21px 0px;
+        margin-bottom: 21px;
 
         &__input {
-          //   width: 346px;
-          //   height: 59px;
-          width: 100%;
           font-size: 14px;
           line-height: 17px;
+        }
+
+        &__desc {
+          font-size: 14px;
+          line-height: 17px;
+          margin-left: 0px;
         }
       }
 
       &__button {
-        width: 181px;
+        width: 122px;
         height: 47px;
-        margin: 49px 0px 17px 0px;
+        margin-top: 47px;
         font-size: 14px;
         line-height: 135.2%;
       }
-    }
-
-    &__link {
-      font-size: 14px;
-      line-height: 17px;
     }
   }
 }

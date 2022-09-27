@@ -84,20 +84,23 @@
     }
 
     &__form {
+      display: block;
+
       &__label {
         font-size: 14px;
         line-height: 17px;
         margin: 0px 0px 38px 0px;
 
         &__input {
-          width: 346px;
-          height: 59px;
+          width: 100%;
           font-size: 14px;
           line-height: 17px;
         }
       }
 
       &__button {
+        display: block;
+        margin: auto;
         width: 181px;
         height: 47px;
         margin-bottom: 30px;
