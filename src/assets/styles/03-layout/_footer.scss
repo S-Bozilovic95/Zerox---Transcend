@@ -4,7 +4,7 @@
   padding: 66px 0px 73px 0px;
   margin-top: 20px;
   color: white;
-  font-family: "Gotham";
+  // font-family: "Gotham";
 
   &__join-box {
     &__title {
@@ -34,7 +34,7 @@
       &__button {
         background: #ffffff;
         border-radius: 10px;
-        font-family: "Gotham";
+        // font-family: "Gotham";
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
@@ -72,7 +72,6 @@
 
       &__link {
         display: block;
-
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -84,8 +83,6 @@
   }
 
   &__copy-title {
-    // margin-top: 25px;
-
     font-style: normal;
     font-weight: 350;
     font-size: 18px;
@@ -123,6 +120,7 @@
 @media (max-width: breakpoint(lg)) {
   .footer {
     padding: 35px 0px;
+    z-index: 0;
 
     &__join-box {
       &__title {
