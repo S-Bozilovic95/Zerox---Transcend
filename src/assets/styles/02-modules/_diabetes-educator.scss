@@ -1,9 +1,9 @@
 .d-program {
   margin: 73px 0px 72px 0px;
   //   font-family: 'Gotham';
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 686 742' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='371' cy='371' r='371' fill='%23D9D9D9'/%3E%3C/svg%3E%0A");
-  background-position: right center;
-  background-repeat: no-repeat;
+  background: url("data:image/svg+xml,%3Csvg width='742px' viewBox='0 0 686 742' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='371' cy='371' r='371' fill='%23D9D9D9'/%3E%3C/svg%3E%0A")
+    right center no-repeat;
+  height: 815px;
   color: #002643;
 
   &__title {
@@ -45,6 +45,10 @@
     line-height: 135.2%;
     text-transform: uppercase;
     margin-bottom: 34px;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__link {
@@ -58,12 +62,13 @@
 }
 
 // RESPONSIVE
-@media (max-width: breakpoint(lg)) {
+@media (max-width: breakpoint(md)) {
   .d-program {
-    margin: 32px 0px 72px 0px;
+    margin: 32px 0px 0px 0px;
     text-align: center;
-    background-image: url("data:image/svg+xml,%3Csvg width='310' height='310' viewBox='0 0 310 310' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='155' cy='155' r='155' fill='%23D9D9D9'/%3E%3C/svg%3E%0A");
-    background-position: top center;
+    background: url("data:image/svg+xml,%3Csvg width='310' height='310' viewBox='0 0 310 310' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='155' cy='155' r='155' fill='%23D9D9D9'/%3E%3C/svg%3E%0A")
+      top center no-repeat;
+    height: 100%;
 
     &__title {
       margin-top: 336px;

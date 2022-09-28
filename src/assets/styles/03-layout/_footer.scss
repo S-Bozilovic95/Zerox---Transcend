@@ -2,7 +2,6 @@
 .footer {
   background: #002643;
   padding: 66px 0px 73px 0px;
-  margin-top: 20px;
   color: white;
   // font-family: "Gotham";
 
@@ -120,7 +119,6 @@
 @media (max-width: breakpoint(lg)) {
   .footer {
     padding: 35px 0px;
-    z-index: 0;
 
     &__join-box {
       &__title {
