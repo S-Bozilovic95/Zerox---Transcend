@@ -1,0 +1,184 @@
+.split-column {
+  margin: 73px 0px 72px 0px;
+  //   font-family: 'Gotham';
+  background: url("data:image/svg+xml,%3Csvg width='742px' viewBox='0 0 686 742' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='371' cy='371' r='371' fill='%23D9D9D9'/%3E%3C/svg%3E%0A")
+    right center no-repeat;
+  height: 850px;
+  color: #002643;
+
+  &__title {
+    margin-top: 70px;
+    // font-family: "Idlewild";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 40px;
+  }
+
+  &__desc {
+    font-style: normal;
+    font-weight: 350;
+    font-size: 24px;
+    line-height: 29px;
+
+    span {
+      display: block;
+      margin: 35px 0px;
+    }
+  }
+
+  &__button {
+    width: 170px;
+    height: 47px;
+    background: #ffffff;
+    border: 3px solid #002643;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 135.2%;
+    text-transform: uppercase;
+    margin-bottom: 34px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__link {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #00b2e2;
+  }
+}
+
+.split-column-second-opt {
+  margin: 70px 0px 0px 0px;
+  color: #002643;
+  height: 950px;
+  background: url("data:image/svg+xml,%3Csvg width='742px'  viewBox='0 0 670 742' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='299' cy='371' r='371' fill='%23D9D9D9'/%3E%3C/svg%3E%0A")
+      left center no-repeat,
+    url("/build/assets/images/png/c-Transcend\ Foods_r1_7889\ \(1\)\ 1.png")
+      bottom right no-repeat;
+
+  &__title {
+    margin-top: 130px;
+    margin-bottom: 18px;
+    // font-family: "Idlewild";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  &__desc {
+    font-style: normal;
+    font-weight: 350;
+    font-size: 24px;
+    line-height: 29px;
+
+    span {
+      display: block;
+      margin: 80px 0px;
+    }
+  }
+
+  &__button {
+    width: 325px;
+    height: 47px;
+    background: #ffffff;
+    border: 3px solid #002643;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 135.2%;
+    text-transform: uppercase;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+// RESPONSIVE
+@media (max-width: breakpoint(md)) {
+  .split-column {
+    display: block;
+    margin: 0px;
+    text-align: center;
+    background: url("data:image/svg+xml,%3Csvg width='310' viewBox='0 0 310 310' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='155' cy='155' r='155' fill='%23D9D9D9'/%3E%3C/svg%3E%0A")
+        top center no-repeat,
+      url("/build/assets/images/png/c-Transcend\ Foods2.png") bottom no-repeat;
+    background-size: auto, max($numbers: 459px);
+    padding-bottom: 1405px;
+
+    &__title {
+      margin-top: 336px;
+      margin-bottom: 26px;
+      font-size: 28px;
+      line-height: 126%;
+    }
+
+    &__desc {
+      font-size: 16px;
+      line-height: 19px;
+
+      span {
+        margin: 42px 0px;
+      }
+    }
+
+    &__button {
+      width: 181px;
+      height: 47px;
+      font-size: 14px;
+      line-height: 135.2%;
+    }
+
+    &__link {
+      display: none;
+    }
+  }
+
+  .split-column-second-opt {
+    display: block;
+    margin: 0px;
+    text-align: center;
+    background: url("data:image/svg+xml,%3Csvg width='310' viewBox='0 0 310 310' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='155' cy='155' r='155' fill='%23D9D9D9'/%3E%3C/svg%3E%0A")
+        top center no-repeat,
+      url("/build/assets/images/png/c-Transcend\ Foods2.png") bottom no-repeat;
+    background-size: auto, max($numbers: 459px);
+    height: 1305px;
+
+    &__title {
+      margin-top: 336px;
+      margin-bottom: 26px;
+      font-size: 28px;
+      line-height: 126%;
+    }
+
+    &__desc {
+      font-size: 16px;
+      line-height: 19px;
+
+      span {
+        margin: 42px 0px;
+      }
+    }
+
+    &__button {
+      width: 231px;
+      height: 47px;
+      font-size: 14px;
+      line-height: 135.2%;
+    }
+  }
+}
