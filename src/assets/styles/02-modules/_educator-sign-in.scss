@@ -28,11 +28,15 @@
       flex-direction: column;
       align-items: flex-start;
       margin-bottom: 30px;
-      font-style: normal;
-      font-weight: 350;
-      font-size: 18px;
-      line-height: 22px;
       color: #002643;
+
+      &__text {
+        margin: 9px 7px;
+        font-style: normal;
+        font-weight: 350;
+        font-size: 18px;
+        line-height: 22px;
+      }
 
       &__input {
         width: 100%;
@@ -56,7 +60,7 @@
     }
 
     &__button {
-      width: 108px;
+      padding: 0px 20px;
       height: 47px;
       background: #ffffff;
       border: 3px solid #002643;
@@ -95,9 +99,12 @@
 
     &__form {
       &__label {
-        font-size: 14px;
-        line-height: 17px;
         margin-bottom: 21px;
+
+        &__text {
+          font-size: 14px;
+          line-height: 17px;
+        }
 
         &__input {
           font-size: 14px;
@@ -112,7 +119,7 @@
       }
 
       &__button {
-        width: 122px;
+        padding: 0px 34px;
         height: 47px;
         margin-top: 47px;
         font-size: 14px;

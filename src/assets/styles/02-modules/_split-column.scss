@@ -35,7 +35,7 @@
   }
 
   &__button {
-    width: 170px;
+    padding: 0px 45px;
     height: 47px;
     background: #ffffff;
     border: 3px solid #002643;
@@ -52,6 +52,7 @@
   }
 
   &__link {
+    display: block;
     font-weight: 300;
     font-size: 18px;
     line-height: 22px;
@@ -92,7 +93,7 @@
   }
 
   &__button {
-    width: 325px;
+    padding: 0px 17px;
     height: 47px;
     background: #ffffff;
     border: 3px solid #002643;
@@ -137,7 +138,7 @@
     }
 
     &__button {
-      width: 181px;
+      padding: 0px 63px;
       height: 47px;
       font-size: 14px;
       line-height: 135.2%;
@@ -175,7 +176,6 @@
     }
 
     &__button {
-      width: 231px;
       height: 47px;
       font-size: 14px;
       line-height: 135.2%;

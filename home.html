@@ -308,7 +308,6 @@
     <!-- search bar overlay -->
     <div class="header__overlay"></div>
     <!-- END RESPONSIVE STRUCTURE -->
-
   </header>
   <!-- END HEADER SECTION -->
 
@@ -316,26 +315,28 @@
   <!-- scroll test -->
   <div style="height:50vh; border: 1px solid red;"></div>
 
+
   <!-- CUSTOMER LOGIN SECTION -->
   <section class="login">
     <div class="container">
       <h3 class="login__title">Customer <br> Login</h3>
       <form class="login__form">
         <label class="login__form__label">
-          Email
+          <p class="login__form__label__text">Email</p>
           <input class="login__form__label__input" type="text" placeholder="Email">
         </label>
         <label class="login__form__label">
-          Password
+          <p class="login__form__label__text">Password</p>
           <input class="login__form__label__input" type="text" placeholder="Password">
         </label>
         <input class="login__form__button" type="submit" value="Sign Up">
-        <input class="login__form__button" type="submit" value="Create Account">
+        <input class="login__form__button second-btn" type="submit" value="Create Account">
       </form>
       <a class="login__link" href="#">Forgot your Password?</a>
     </div>
   </section>
   <!-- END CUSTOMER LOGIN SECTION -->
+
 
   <!-- CREATE ACCOUNT SECTION -->
   <section class="create-account">
@@ -344,23 +345,23 @@
       <p class="create-account__subtitle">Please complete all the mandatory fields marked with*</p>
       <form class="create-account__form">
         <label class="create-account__form__label">
-          First Name*
+          <p class="create-account__form__label__text">First Name*</p>
           <input class="create-account__form__label__input" type="text" placeholder="Name">
         </label>
         <label class="create-account__form__label">
-          Last Name*
+          <p class="create-account__form__label__text">Last Name*</p>
           <input class="create-account__form__label__input" type="text" placeholder="Last Name">
         </label>
         <label class="create-account__form__label">
-          Email (format: name@domain.com)*
+          <p class="create-account__form__label__text">Email (format: name@domain.com)*</p>
           <input class="create-account__form__label__input" type="text" placeholder="Email (format: name@domain.com)">
         </label>
         <label class="create-account__form__label">
-          Phone Number
+          <p class="create-account__form__label__text">Phone Number</p>
           <input class="create-account__form__label__input" type="text" placeholder="Phone Number">
         </label>
         <label class="create-account__form__label">
-          Password*
+          <p class="create-account__form__label__text">Password*</p>
           <input class="create-account__form__label__input" type="text" placeholder="Password">
         </label>
         <input class="create-account__form__button" type="submit" value="create account">
@@ -369,6 +370,7 @@
     </div>
   </section>
   <!-- END CREATE ACCOUNT SECTION -->
+
 
   <!-- EDUCATOR SIGN IN SECTION -->
   <section class="educator">
@@ -380,52 +382,52 @@
         <div class="row">
           <div class="col-md-6 col-12">
             <label class="educator__form__label">
-              Name*
+              <p class="educator__form__label__text">Name*</p>
               <input class="educator__form__label__input" type="text">
               <p class="educator__form__label__desc">First Name</p>
             </label>
           </div>
           <div class="col-md-6 col-12">
             <label class="educator__form__label">
-              &nbsp
+              <p class="educator__form__label__text">&nbsp</p>
               <input class="educator__form__label__input" type="text">
               <p class="educator__form__label__desc">Last Name</p>
             </label>
           </div>
           <div class="col-12">
             <label class="educator__form__label">
-              Work Email (format: name@domain.com)*
+              <p class="educator__form__label__text">Work Email (format: name@domain.com)*</p>
               <input class="educator__form__label__input" type="text"
                 placeholder="Work Email (format: name@domain.com)*">
             </label>
           </div>
           <div class="col-md-6 col-12">
             <label class="educator__form__label">
-              Company*
+              <p class="educator__form__label__text">Company*</p>
               <input class="educator__form__label__input" type="text">
             </label>
           </div>
           <div class="col-md-6 col-12">
             <label class="educator__form__label">
-              Company Website
+              <p class="educator__form__label__text">Company Website</p>
               <input class="educator__form__label__input" type="text">
             </label>
           </div>
           <div class="col-md-6 col-12">
             <label class="educator__form__label">
-              Title*
+              <p class="educator__form__label__text">Title*</p>
               <input class="educator__form__label__input" type="text">
             </label>
           </div>
           <div class="col-md-6 col-12">
             <label class="educator__form__label">
-              Phone Number
+              <p class="educator__form__label__text">Phone Number</p>
               <input class="educator__form__label__input" type="text">
             </label>
           </div>
           <div class="col-12">
             <label class="educator__form__label">
-              Address
+              <p class="educator__form__label__text">Address</p>
               <input class="educator__form__label__input" type="text">
               <p class="educator__form__label__desc">Strees Address</p>
             </label>
@@ -463,14 +465,14 @@
         <div class="row">
           <div class="col-md-6 col-12">
             <label class="educator__form__label">
-              Password*
+              <p class="educator__form__label__text">Password</p>
               <input class="educator__form__label__input" type="text">
               <p class="educator__form__label__desc">Enter Password</p>
             </label>
           </div>
           <div class="col-md-6 col-12">
             <label class="educator__form__label">
-              &nbsp
+              <p class="educator__form__label__text">&nbsp</p>
               <input class="educator__form__label__input" type="text">
               <p class="educator__form__label__desc">Confirm Password</p>
             </label>
@@ -483,8 +485,8 @@
   </section>
   <!-- END EDUCATOR SIGN IN SECTION -->
 
-  <!--  SPLIT COLUMN SECTION -->
 
+  <!--  SPLIT COLUMN SECTION -->
   <!-- first variation (choice === false)-->
   <section class="split-column">
     <div class="container">
@@ -529,31 +531,6 @@
     </div>
   </section>
   <!-- END SPLIT COLUMN SECTION -->
-
-
-
-  <!-- EXPECT SECTION -->
-  <!-- <section class="expect">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-12"></div>
-        <div class="col-md-6 col-12">
-          <h3 class="expect__title">What to Expect</h3>
-          <div class="expect__desc">
-            Once approved, you will receive a sample box of 20 strawberry glucose gels, 20 orange glucose gels and 12
-            mixed berry glucose shots. Each is packaged individually for your patient with a discount code on a future
-            order.
-            <span>
-              We’ll follow up with you when you receive your Transcend samples to answer any questions and get your
-              feedback.
-            </span>
-          </div>
-          <input class="expect__button" type="submit" value="Sign Up To Be An Educator">
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- END EXPECT SECTION -->
 
 
   <!-- FOOTER SECTION -->
