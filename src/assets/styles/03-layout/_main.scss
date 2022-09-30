@@ -50,18 +50,3 @@ main {
     border-color: #818488;
   }
 }
-
-// custom classes
-
-.line {
-  display: none;
-  content: "";
-  border: 10px solid #d9d9d9;
-  width: 181px;
-  height: 0px;
-  margin: 42px auto 51px auto;
-
-  @media (max-width: breakpoint(md)) {
-    display: block;
-  }
-}
